@@ -1931,7 +1931,7 @@ $('.proxy.checkbox')
     onChecked: function () {
       document.querySelector("#addproxy").style.display = "block";
       document.querySelector("#clearallproxy").style.display = "block";
-      $('#botamount .labeled.input').addClass('disabled');
+      $('#botamount .labeled.input').addClass('enabled');
       if (JSON.parse(localStorage.getItem("proxies"))) { $('#botamount .labeled.input input').val(JSON.parse(localStorage.getItem("proxies")).length); }
     },
     onUnchecked: function () {
