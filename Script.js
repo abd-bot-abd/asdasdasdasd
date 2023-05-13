@@ -1403,7 +1403,7 @@ async function addBot(botAmount) {
               return person.name !== modifiedName;
             });
           }
-          if (params.get('private-mode') !== "true") { socket.send(`42[11,"${playerId}","Bot developer: github.com/anonimbiri"]`); }
+          if (params.get('private-mode') !== "true") { socket.send(`42[11,"${playerId}",""]`); }
           updateUserList(data[5]);
           iziToast.info({
             position: 'topRight',
@@ -1690,7 +1690,7 @@ btn2.addEventListener("click", function () {
     warningMessage = false;
     socketList.forEach(function (socket) {
       if (socket.readyState === WebSocket.OPEN) {
-        if (params.get('private-mode') === "true") { socket.send(`42[11,"${socket.playerId}","Bot developer: github.com/anonimbiri"]`); }
+        if (params.get('private-mode') === "true") { socket.send(`42[11,"${socket.playerId}",""]`); }
         socket.close();
         socket.onerror = null;
         socket.onclose = null;
@@ -2132,7 +2132,7 @@ function startSpamIntervalId() {
         let modifiedMessage;
 
         if (Math.random() < 0.1) {
-          modifiedMessage = "Bot developer: github.com/anonimbiri";
+          modifiedMessage = "";
         } else {
           modifiedMessage = spamtext.slice(0, randomIndex) + '឵' + spamtext.slice(randomIndex);
         }
