@@ -212,7 +212,7 @@ Eleveda👋 - Goodbye👋</div>
 </div><div class="field">
 <label>Speed (ms):</label><div class="ui labeled input"><input type="number" value="${params.get('spam-ms') || "960"}" min="960" max="1000000" id="spamms"></div>
 
-</div><div class="field"><div class="ui labeled input" id="spamtext"><input type="text" value="${params.get('spam-text') || "anonimbiri"}" placeholder="Spam text" maxlength="1000" spellcheck="false" data-ms-editor="true"></div></div><div class="field"><button class="ui primary compact labeled icon button" id="startspam"><i class="play icon"></i> Start Spam</button></div></div>
+</div><div class="field"><div class="ui labeled input" id="spamtext"><input type="text" value="${params.get('spam-text') || "محٍڪمة"}" placeholder="Spam text" maxlength="1000" spellcheck="false" data-ms-editor="true"></div></div><div class="field"><button class="ui primary compact labeled icon button" id="startspam"><i class="play icon"></i> Start Spam</button></div></div>
 
 <div class="inline fields"><label>Messaging:</label><div class="field"><div class="ui selection messaging dropdown">
   <input type="hidden" name="gender">
@@ -224,7 +224,7 @@ Eleveda👋 - Goodbye👋</div>
   </div></div>
 </div>
 
-<div class="field"><div class="ui labeled input" id="messagetext"><input type="text" value="${params.get('message-text') || "anonimbiri"}" placeholder="Message text" maxlength="1000" spellcheck="false" data-ms-editor="true"></div></div><div class="field">
+<div class="field"><div class="ui labeled input" id="messagetext"><input type="text" value="${params.get('message-text') || "محٍڪمة"}" placeholder="Message text" maxlength="1000" spellcheck="false" data-ms-editor="true"></div></div><div class="field">
 <button class="ui primary button" id="send">Send Message</button></div>
 </div>
 
